@@ -32,7 +32,6 @@ export const about = {
   title: 'About Me',
   name: 'Ramón Pastré',
   role: 'Web Developer',
-  availability: 'Open to work',
   photo: {
     src: '/profile.jpg',
     alt: 'Portrait of Ramón Pastré',
