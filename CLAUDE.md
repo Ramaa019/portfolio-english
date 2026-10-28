@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-A single-page personal portfolio (in English) for Ramón Pastré, built with **Vite + React + TypeScript + Tailwind CSS v4**, deployed on **Vercel**. `portfolio.md` holds the final text content that the site displays.
+A single-page personal portfolio (in English) for Ramón Pastré, built with **Vite + React + TypeScript + Tailwind CSS v4**, deployed on **Vercel** at https://portfolio-english-fawn.vercel.app/ (auto-deploys on every push to `main`). `portfolio.md` holds the final text content that the site displays.
 
 ## Working with the user
 
