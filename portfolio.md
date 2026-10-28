@@ -2,48 +2,62 @@
 
 ## 1. About Me
 
-Hi, my name is Ramón. I'm a programming student and a web developer.
+Hi, I'm Ramón. I'm a programming student at UTN and a web developer.
 
-I'm currently studying programming at UTN, and I mostly work with TypeScript, React and Node.js.
+I mostly work with TypeScript, React and Node.js, and my favorite part is the backend: designing databases and building the logic behind an application. That's why most of my projects are about data.
 
-I'm passionate about the power of programming: with code, you can create anything you can imagine.
+I'm always learning something new. I take online courses, I stay up to date with the tech world, and I like trying new things from different areas of software development. Right now, I'm looking for my first experience in a development team, where I can keep learning and work on real products.
 
-I'm especially interested in the backend: designing databases and building the logic behind an application.
-
-When I'm not coding, you can find me watching movies, reading books, listening to music and drinking mate.
+What I love most about programming is that, with code, you can create anything you can imagine.
 
 ## 2. Current projects (Work in progress)
 
-Right now, I'm developing a personal finance web application. It helps you manage your income, your expenses and your payments in one place.
+### WalletZap
 
-I'm also integrating a WhatsApp bot, so you can manage your finances from a chat: you can record an expense, add an income or check the balance of an account with a single message, without opening the application.
+Right now, I'm building WalletZap, a personal finance web application. It helps you manage your income, your expenses and your payments in one place.
 
-At the moment, I'm working on the backend routes. I'm using the technologies I learned in my previous project — TypeScript, Express, Sequelize and PostgreSQL — and I'm also learning React and Tailwind CSS to build the frontend, and how to integrate testing.
+I'm building it on my own. At the moment, I'm working on the backend: I'm creating the routes with TypeScript, Express, Sequelize and PostgreSQL, the same tools I used in my last project. I'm also designing the database so that, in the future, the app can work with a WhatsApp bot.
 
-I'm building this project on my own.
+At the same time, I'm learning React and Tailwind CSS for the frontend. In fact, I'm using them to build this portfolio!
 
 ## 3. Past projects
 
-In the first semester of this year, I worked on an online store for PC components. It included a PC builder that checked whether the parts were compatible with each other.
+### PC components online store
 
-I developed it in a team with other university students. My part was the database and the backend: I designed and implemented the database in PostgreSQL, and I coded the backend with TypeScript, Express and Sequelize as the ORM.
+In the first semester of this year, I worked on an online store for PC components with other students from UTN. Its main feature was a PC builder that checked if the parts were compatible with each other.
 
-It was my first project with an ORM, and I also learned how to build a complete MVC architecture.
+My part was the database and the backend. I designed the database in PostgreSQL, I coded most of the backend with TypeScript, Express and Sequelize, and I wrote its documentation.
+
+It was my first project with Sequelize, and I learned how to build a complete MVC architecture.
+
+### Dice simulator
+
+Before that, I worked on a dice simulator, also as a team project at university. You roll two dice, and the app shows the results with animations and a board with statistics.
+
+I was in charge of the frontend. I designed the interface, I built it with HTML and CSS, and I coded part of the logic in JavaScript.
+
+After this project, I wanted to try the other side of an application, so in my next project I worked on the backend.
 
 ## 4. Future projects
 
-When I finish my personal finance application, I'm going to ask my friends and my family to try it, because I want to know their opinion.
+When I finish the backend, I'm going to add a WhatsApp bot to WalletZap. You will send a message to record an expense or check your balance.
 
-My next project is a photography website for a friend. I'm going to build it as soon as I finish the finance app.
+Then, I'll ask my friends and my family to try it. Their opinion will help me find bugs and improve the app.
 
-After that, I'm going to study how to develop with AI professionally, and how to integrate AI into my own projects. I think AI will change the way we build software, so I want to learn it properly.
+After WalletZap, I'm going to build a photography website for a friend. It will be my first project for a real client.
 
-## 5. Comparing technologies: ORM vs raw SQL
+In the long term, I'm going to learn how to develop professionally with AI, because I think it will change the way we build software.
 
-There are two ways of working with a database: using an ORM, or writing raw SQL.
+I also want to try programming electronics, like Arduino. I have never done it, but it will be a new area to explore.
 
-An ORM is simpler for everyday work. One line of JavaScript can replace a long SQL query, so you write your code faster. It is also safer, because it protects your application from SQL injection, and it is more flexible: if you change the database engine, you don't have to rewrite your queries.
+## 5. Comparing technologies: Frontend vs Backend
 
-Raw SQL is faster when it runs, because an ORM adds an extra layer between your code and the database. You also have total control over every query, and for complex queries, with several joins or subqueries, raw SQL is clearer than an ORM.
+Every web application has two parts: the frontend and the backend. The frontend is what you see: the pages, the buttons and the colors. The backend is what you don't see: the server, the database and the logic.
 
-So, which one is better? My advice is to learn SQL first. An ORM is more comfortable, but it is also easier to use when you understand what it does behind the scenes.
+I have worked on both. In the dice simulator, I worked on the frontend, and in the PC builder, I worked on the backend.
+
+The frontend is more visual and more creative. You see your results immediately, so it's more fun at the beginning. But it can also be more frustrating, because the page must look good on every screen.
+
+The backend is more logical. It's harder to see your progress, but for me, it's more interesting, because you design how the data works. It's also more important for security.
+
+So, which one is better? Neither is better than the other: an application needs both. But I enjoy the backend more, and that's why most of my projects are about data.

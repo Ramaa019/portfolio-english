@@ -16,7 +16,7 @@ A single-page personal portfolio (in English) for Ramón Pastré, built with **V
 ## Architecture (planned)
 
 - **Content is separated from presentation.** All text lives in `src/data/content.ts`, sourced from `portfolio.md`. Components receive content via props/imports and never hardcode copy. To change wording, edit `content.ts` (and keep `portfolio.md` in sync).
-- `src/sections/` — one component per page section, in this order: About, Current Projects, Past Projects, Future Projects, Comparison (ORM vs raw SQL).
+- `src/sections/` — one component per page section, in this order: About, Current Projects, Past Projects, Future Projects, Comparison (Frontend vs Backend).
 - `src/components/` — small reusable pieces (section wrapper, header/nav, project card, tech tag).
 - `src/hooks/` — custom hooks (`useActiveSection` highlights the current section in the header nav; it relies on the last section having a `min-h` so it can scroll far enough).
 - Static assets (profile photo, later the video) go in `public/`.

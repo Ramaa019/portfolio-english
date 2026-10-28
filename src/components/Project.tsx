@@ -27,6 +27,21 @@ export function Project({ project }: ProjectProps) {
           <TechTag key={tag} name={tag} />
         ))}
       </div>
+
+      <div className="mt-4 flex flex-wrap gap-5">
+        {project.links.map((link) => (
+          <a
+            key={link.href}
+            href={link.href}
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center gap-1.5 text-sm font-medium text-zinc-900 transition-colors hover:text-accent"
+          >
+            <link.icon className="size-4" aria-hidden="true" />
+            {link.label}
+          </a>
+        ))}
+      </div>
     </article>
   )
 }
