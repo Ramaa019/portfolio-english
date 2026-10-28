@@ -27,10 +27,13 @@ Minimal dark theme with a single accent color. Includes a header with anchor nav
 
 ## Commands
 
-- `npm run dev` — local dev server with hot reload (http://localhost:5173)
-- `npm run build` — type-check (`tsc -b`) and production build into `dist/`
-- `npm run lint` — lint with oxlint (config in `.oxlintrc.json`)
-- `npm run preview` — serve the production build locally
+Use **pnpm** (not npm) — the lockfile is `pnpm-lock.yaml`. Add packages with `pnpm add <pkg>` (`-D` for dev dependencies).
+
+
+- `pnpm dev` — local dev server with hot reload (http://localhost:5173)
+- `pnpm build` — type-check (`tsc -b`) and production build into `dist/`
+- `pnpm lint` — lint with oxlint (config in `.oxlintrc.json`)
+- `pnpm preview` — serve the production build locally
 
 No test setup yet.
 
