@@ -1,7 +1,9 @@
+import { About } from './sections/About'
+
 function App() {
   return (
-    <main className="min-h-screen bg-zinc-950 text-zinc-100 flex items-center justify-center">
-      <h1 className="text-4xl font-bold">Hello, portfolio!</h1>
+    <main className="mx-auto min-h-screen max-w-3xl px-6">
+      <About />
     </main>
   )
 }
