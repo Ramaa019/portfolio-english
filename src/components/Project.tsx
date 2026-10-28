@@ -15,12 +15,13 @@ export function Project({ project }: ProjectProps) {
           width={1250}
           height={600}
           loading="lazy"
-          className="mb-5 aspect-2/1 w-full rounded-xl object-cover object-top shadow-lg shadow-zinc-900/10"
+          // aspect-5/2 crops the image to a wider, shorter strip and mask-b-* fades out its bottom part
+          className="mb-3 aspect-5/2 w-full rounded-t-xl object-cover object-top mask-b-from-40% mask-b-to-100%"
         />
       )}
 
       <div className="flex flex-wrap items-center gap-3">
-        <h3 className="font-display text-xl font-semibold text-zinc-900">{project.name}</h3>
+        <h3 className="font-display text-2xl font-bold tracking-tight text-zinc-900">{project.name}</h3>
         <span className="flex items-center gap-1.5 rounded-full bg-zinc-200 px-2.5 py-0.5 text-xs font-medium text-zinc-700">
           <project.statusIcon className="size-3.5" aria-hidden="true" />
           {project.status}
@@ -39,14 +40,14 @@ export function Project({ project }: ProjectProps) {
         ))}
       </div>
 
-      <div className="mt-4 flex flex-wrap gap-5">
+      <div className="mt-5 flex flex-wrap gap-3">
         {project.links.map((link) => (
           <a
             key={link.href}
             href={link.href}
             target="_blank"
             rel="noreferrer"
-            className="flex items-center gap-1.5 text-sm font-medium text-zinc-900 transition-colors hover:text-accent"
+            className="flex items-center gap-1.5 rounded-lg bg-accent/10 px-3.5 py-2 text-sm font-medium text-accent transition-colors hover:bg-accent hover:text-white"
           >
             <link.icon className="size-4" aria-hidden="true" />
             {link.label}
