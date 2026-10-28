@@ -10,7 +10,8 @@ export function Project({ project }: ProjectProps) {
     <article>
       <div className="flex flex-wrap items-center gap-3">
         <h3 className="font-display text-xl font-semibold text-zinc-900">{project.name}</h3>
-        <span className="rounded-full bg-zinc-200 px-2.5 py-0.5 text-xs font-medium text-zinc-700">
+        <span className="flex items-center gap-1.5 rounded-full bg-zinc-200 px-2.5 py-0.5 text-xs font-medium text-zinc-700">
+          <project.statusIcon className="size-3.5" aria-hidden="true" />
           {project.status}
         </span>
       </div>

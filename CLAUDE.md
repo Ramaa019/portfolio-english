@@ -18,12 +18,13 @@ A single-page personal portfolio (in English) for Ramón Pastré, built with **V
 - **Content is separated from presentation.** All text lives in `src/data/content.ts`, sourced from `portfolio.md`. Components receive content via props/imports and never hardcode copy. To change wording, edit `content.ts` (and keep `portfolio.md` in sync).
 - `src/sections/` — one component per page section, in this order: About, Current Projects, Past Projects, Future Projects, Comparison (ORM vs raw SQL).
 - `src/components/` — small reusable pieces (section wrapper, header/nav, project card, tech tag).
+- `src/hooks/` — custom hooks (`useActiveSection` highlights the current section in the header nav; it relies on the last section having a `min-h` so it can scroll far enough).
 - Static assets (profile photo, later the video) go in `public/`.
 - The **Comparison** section will eventually be a video (images + the user's voiceover + synced English subtitles). Until then it renders an empty video placeholder of the final size; the video itself is a later, separate task.
 
 ## Design
 
-Minimal light theme (zinc-50 page, no cards or borders — sections separated by spacing, compact centered column, large hero with photo + name) with a violet accent. Design tokens (fonts: Space Grotesk for headings, Inter for body; accent colors) live in `@theme` in `src/index.css`. Includes a header with anchor navigation to each section, contact links (GitHub, LinkedIn, email), a profile photo in About, and technology tags on project cards. Must be responsive (mobile-first).
+Minimal light theme (zinc-50 page, no cards or borders — sections separated by a `Divider`, compact centered column, large hero with photo + name over a soft blurred violet glow) with a violet accent. The user tried a dot-grid background and rejected it. Icons: `lucide-react` for UI icons (section titles, statuses, lists), `simple-icons` for technology logos (the hero stack row). Design tokens (fonts: Space Grotesk for headings, Inter for body; accent colors) live in `@theme` in `src/index.css`. Includes a header with anchor navigation to each section, contact links (GitHub, LinkedIn, email), a profile photo in About, and technology tags on project cards. Must be responsive (mobile-first).
 
 ## Commands
 

@@ -34,6 +34,7 @@ pnpm lint      # lint with oxlint
 src/
   data/content.ts   # all the text shown on the site
   components/       # reusable pieces (Section, Project, Header, ...)
+  hooks/            # custom React hooks (active section in the header)
   sections/         # one component per page section
   index.css         # Tailwind import and design tokens (fonts, accent color)
 public/             # static files (profile photo, favicon)

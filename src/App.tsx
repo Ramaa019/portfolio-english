@@ -1,3 +1,4 @@
+import { Divider } from './components/Divider'
 import { Footer } from './components/Footer'
 import { Header } from './components/Header'
 import { About } from './sections/About'
@@ -10,11 +11,15 @@ function App() {
   return (
     <>
       <Header />
-      <main className="mx-auto flex max-w-3xl flex-col gap-16 px-4">
+      <main className="mx-auto flex max-w-3xl flex-col gap-12 px-4">
         <About />
+        <Divider />
         <CurrentProjects />
+        <Divider />
         <PastProjects />
+        <Divider />
         <FutureProjects />
+        <Divider />
         <Comparison />
       </main>
       <Footer />

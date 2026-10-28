@@ -1,11 +1,23 @@
-import { ButtonLink } from '../components/ButtonLink'
+import { UserRound } from 'lucide-react'
 import { Section } from '../components/Section'
-import { about, contact } from '../data/content'
+import { SectionTitle } from '../components/SectionTitle'
+import { TechStack } from '../components/TechStack'
+import { about } from '../data/content'
 
 export function About() {
   return (
     <Section id="about">
-      <div className="flex flex-col items-center gap-8 py-10 text-center sm:flex-row sm:py-16 sm:text-left">
+      <div className="relative isolate flex flex-col items-center gap-8 py-10 text-center sm:flex-row sm:py-16 sm:text-left">
+        {/* Decorative blurred glow behind the hero */}
+        <div
+          aria-hidden="true"
+          className="absolute top-4 left-1/2 -z-10 size-72 -translate-x-1/2 rounded-full bg-violet-300/40 blur-3xl sm:left-0 sm:translate-x-0"
+        />
+        <div
+          aria-hidden="true"
+          className="absolute top-24 right-0 -z-10 hidden size-64 rounded-full bg-fuchsia-200/40 blur-3xl sm:block"
+        />
+
         <img
           src={about.photo.src}
           alt={about.photo.alt}
@@ -19,9 +31,13 @@ export function About() {
           </h1>
           <p className="mt-2 font-display text-xl text-accent sm:text-2xl">{about.role}</p>
           <p className="mt-4 text-lg text-zinc-900">{about.intro}</p>
+          <div className="mt-5">
+            <TechStack />
+          </div>
         </div>
       </div>
 
+      <SectionTitle title={about.title} icon={UserRound} />
       <div className="space-y-3">
         {about.paragraphs.map((paragraph) => (
           <p key={paragraph}>{paragraph}</p>
@@ -30,15 +46,6 @@ export function About() {
         <blockquote className="border-l-2 border-accent pl-4 font-display text-lg text-zinc-900 italic">
           {about.quote}
         </blockquote>
-
-        <p>{about.callToAction}</p>
-      </div>
-
-      <div className="mt-5 flex flex-wrap gap-3">
-        <ButtonLink href={contact.github}>View my GitHub</ButtonLink>
-        <ButtonLink href={`mailto:${contact.email}`} variant="secondary">
-          Contact me
-        </ButtonLink>
       </div>
     </Section>
   )

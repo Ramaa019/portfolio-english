@@ -12,8 +12,6 @@ I'm especially interested in the backend: designing databases and building the l
 
 When I'm not coding, you can find me watching movies, reading books, listening to music and drinking mate.
 
-Take a look at my work on GitHub. If you have a project in mind, feel free to contact me.
-
 ## 2. Current projects (Work in progress)
 
 Right now, I'm developing a personal finance web application. It helps you manage your income, your expenses and your payments in one place.
