@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-A single-page personal portfolio (in English) for Ramón Pastré, built with **Vite + React + TypeScript + Tailwind CSS v4**, deployed on **Vercel**. The project has not been scaffolded yet — the only source so far is `portfolio.md`, which holds the final text content.
+A single-page personal portfolio (in English) for Ramón Pastré, built with **Vite + React + TypeScript + Tailwind CSS v4**, deployed on **Vercel**. `portfolio.md` holds the final text content that the site displays.
 
 ## Working with the user
 
@@ -27,8 +27,11 @@ Minimal dark theme with a single accent color. Includes a header with anchor nav
 
 ## Commands
 
-Standard Vite scripts once scaffolded:
-
-- `npm run dev` — local dev server with hot reload
-- `npm run build` — type-check and production build
+- `npm run dev` — local dev server with hot reload (http://localhost:5173)
+- `npm run build` — type-check (`tsc -b`) and production build into `dist/`
+- `npm run lint` — lint with oxlint (config in `.oxlintrc.json`)
 - `npm run preview` — serve the production build locally
+
+No test setup yet.
+
+Tailwind v4 is wired through the `@tailwindcss/vite` plugin in `vite.config.ts` and `@import 'tailwindcss'` in `src/index.css` — there is no `tailwind.config.js`; theme customization goes in CSS via `@theme`.
