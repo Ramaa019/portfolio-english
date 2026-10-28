@@ -1,5 +1,15 @@
 @import 'tailwindcss';
 
+/* Design tokens: every component uses these, so the whole site
+   changes from here (e.g. swap violet for another accent color). */
+@theme {
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Space Grotesk Variable', ui-sans-serif, system-ui, sans-serif;
+
+  --color-accent: var(--color-violet-600);
+  --color-accent-strong: var(--color-violet-700);
+}
+
 body {
-  @apply bg-zinc-950 text-zinc-100;
+  @apply bg-zinc-50 font-sans text-zinc-700 antialiased;
 }

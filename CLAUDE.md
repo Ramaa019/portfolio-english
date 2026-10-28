@@ -23,7 +23,7 @@ A single-page personal portfolio (in English) for Ramón Pastré, built with **V
 
 ## Design
 
-Minimal dark theme with a single accent color. Includes a header with anchor navigation to each section, contact links (GitHub, LinkedIn, email), a profile photo in About, and technology tags on project cards. Must be responsive (mobile-first).
+Minimal light theme (zinc-50 page, no cards or borders — sections separated by spacing, compact centered column, large hero with photo + name) with a violet accent. Design tokens (fonts: Space Grotesk for headings, Inter for body; accent colors) live in `@theme` in `src/index.css`. Includes a header with anchor navigation to each section, contact links (GitHub, LinkedIn, email), a profile photo in About, and technology tags on project cards. Must be responsive (mobile-first).
 
 ## Commands
 
