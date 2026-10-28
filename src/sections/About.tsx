@@ -29,7 +29,17 @@ export function About() {
           <h1 className="font-display text-4xl font-bold tracking-tight text-zinc-900 sm:text-6xl">
             {about.name}
           </h1>
-          <p className="mt-2 font-display text-xl text-accent sm:text-2xl">{about.role}</p>
+          <div className="mt-2 flex flex-wrap items-center justify-center gap-3 sm:justify-start">
+            <p className="font-display text-xl text-accent sm:text-2xl">{about.role}</p>
+            <span className="inline-flex items-center gap-2 rounded-full bg-emerald-50 px-3 py-1 text-sm font-medium text-emerald-700">
+              {/* Green dot with a pulsing ring around it */}
+              <span className="relative flex size-2" aria-hidden="true">
+                <span className="absolute size-full animate-ping rounded-full bg-emerald-400 opacity-75" />
+                <span className="relative size-2 rounded-full bg-emerald-500" />
+              </span>
+              {about.availability}
+            </span>
+          </div>
           <p className="mt-4 text-lg text-zinc-900">{about.intro}</p>
           <div className="mt-5">
             <TechStack />

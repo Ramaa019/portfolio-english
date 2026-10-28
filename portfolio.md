@@ -30,9 +30,9 @@ My part was the database and the backend. I designed the database in PostgreSQL,
 
 It was my first project with Sequelize, and I learned how to build a complete MVC architecture.
 
-### Dice simulator
+### Dice Royale
 
-Before that, I worked on a dice simulator, also as a team project at university. You roll two dice, and the app shows the results with animations and a board with statistics.
+Before that, I worked on Dice Royale, a dice simulator, also as a team project at university. You roll two dice, and the app shows the results with animations and a board with statistics.
 
 I was in charge of the frontend. I designed the interface, I built it with HTML and CSS, and I coded part of the logic in JavaScript.
 
@@ -54,7 +54,7 @@ I also want to try programming electronics, like Arduino. I have never done it, 
 
 Every web application has two parts: the frontend and the backend. The frontend is what you see: the pages, the buttons and the colors. The backend is what you don't see: the server, the database and the logic.
 
-I have worked on both. In the dice simulator, I worked on the frontend, and in the PC builder, I worked on the backend.
+I have worked on both. In Dice Royale, I worked on the frontend, and in the PC builder, I worked on the backend.
 
 The frontend is more visual and more creative. You see your results immediately, so it's more fun at the beginning. But it can also be more frustrating, because the page must look good on every screen.
 

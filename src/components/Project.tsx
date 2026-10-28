@@ -8,6 +8,17 @@ type ProjectProps = {
 export function Project({ project }: ProjectProps) {
   return (
     <article>
+      {project.image && (
+        <img
+          src={project.image.src}
+          alt={project.image.alt}
+          width={1250}
+          height={600}
+          loading="lazy"
+          className="mb-5 aspect-2/1 w-full rounded-xl object-cover object-top shadow-lg shadow-zinc-900/10"
+        />
+      )}
+
       <div className="flex flex-wrap items-center gap-3">
         <h3 className="font-display text-xl font-semibold text-zinc-900">{project.name}</h3>
         <span className="flex items-center gap-1.5 rounded-full bg-zinc-200 px-2.5 py-0.5 text-xs font-medium text-zinc-700">

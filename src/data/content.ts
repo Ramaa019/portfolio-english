@@ -32,6 +32,7 @@ export const about = {
   title: 'About Me',
   name: 'Ramón Pastré',
   role: 'Web Developer',
+  availability: 'Open to work',
   photo: {
     src: '/profile.jpg',
     alt: 'Portrait of Ramón Pastré',
@@ -62,6 +63,8 @@ export type ProjectData = {
   paragraphs: string[]
   tags: string[]
   links: { label: string; href: string; icon: LucideIcon }[]
+  // Optional screenshot, stored in public/projects/
+  image?: { src: string; alt: string }
 }
 
 export const currentProject: ProjectData = {
@@ -83,6 +86,7 @@ export const pastProjects: ProjectData[] = [
     name: 'PC components online store',
     status: 'Team project',
     statusIcon: Users,
+    image: { src: '/projects/pc-builder.webp', alt: 'Home page of the PC components online store' },
     paragraphs: [
       'In the first semester of this year, I worked on an online store for PC components with other students from UTN. Its main feature was a PC builder that checked if the parts were compatible with each other.',
       'My part was the database and the backend. I designed the database in PostgreSQL, I coded most of the backend with TypeScript, Express and Sequelize, and I wrote its documentation.',
@@ -95,11 +99,12 @@ export const pastProjects: ProjectData[] = [
     ],
   },
   {
-    name: 'Dice simulator',
+    name: 'Dice Royale',
     status: 'Team project',
     statusIcon: Users,
+    image: { src: '/projects/dice-simulator.webp', alt: 'Dice Royale, a dice simulator with two dice and a statistics board' },
     paragraphs: [
-      'Before that, I worked on a dice simulator, also as a team project at university. You roll two dice, and the app shows the results with animations and a board with statistics.',
+      'Before that, I worked on Dice Royale, a dice simulator, also as a team project at university. You roll two dice, and the app shows the results with animations and a board with statistics.',
       'I was in charge of the frontend. I designed the interface, I built it with HTML and CSS, and I coded part of the logic in JavaScript.',
       'After this project, I wanted to try the other side of an application, so in my next project I worked on the backend.',
     ],
