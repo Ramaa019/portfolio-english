@@ -7,6 +7,14 @@ export const contact = {
   email: 'ramonpastre@gmail.com',
 }
 
+// Header navigation: each href points to a section id
+export const navLinks = [
+  { label: 'About', href: '#about' },
+  { label: 'Projects', href: '#current-projects' },
+  { label: 'Future', href: '#future-projects' },
+  { label: 'ORM vs SQL', href: '#comparison' },
+]
+
 export const about = {
   name: 'Ramón Pastré',
   role: 'Web Developer',
