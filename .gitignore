@@ -28,4 +28,4 @@ dist-ssr
 .vercel/
 
 # Video working files (the final video is in public/video/)
-video/
+/video/
