@@ -142,7 +142,7 @@ export const futureProjects = [
 export const footer = {
   title: "Let's build something together",
   text: 'Have a project in mind or just want to talk? Send me a message and I will get back to you.',
-  builtWith: 'Built with React and Tailwind CSS',
+  label: 'Portfolio',
   backToTop: 'Back to top',
 }
 

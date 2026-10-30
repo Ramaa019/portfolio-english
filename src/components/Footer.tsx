@@ -36,7 +36,7 @@ export function Footer() {
       {/* Bottom bar */}
       <div className="mt-12 flex flex-col items-center gap-2 text-sm text-zinc-500 sm:flex-row sm:justify-between">
         <p>
-          © {currentYear} {about.name} · {footer.builtWith}
+          © {currentYear} {about.name} · {footer.label}
         </p>
         <a href="#about" className="flex items-center gap-1 transition-colors hover:text-accent">
           {footer.backToTop}
