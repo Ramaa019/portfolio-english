@@ -19,8 +19,8 @@ A single-page personal portfolio (in English) for Ramón Pastré, built with **V
 - `src/sections/` — one component per page section, in this order: About, Current Projects, Past Projects, Future Projects, Comparison (Frontend vs Backend).
 - `src/components/` — small reusable pieces (section wrapper, header/nav, project card, tech tag).
 - `src/hooks/` — custom hooks (`useActiveSection` highlights the current section in the header nav; it relies on the last section having a `min-h` so it can scroll far enough).
-- Static assets (profile photo, later the video) go in `public/`.
-- The **Comparison** section will eventually be a video (images + the user's voiceover + synced English subtitles). Until then it renders an empty video placeholder of the final size; the video itself is a later, separate task.
+- Static assets (profile photo, screenshots, the video) go in `public/`.
+- The **Comparison** section is a video (illustrations + the user's voiceover + burned-in English subtitles) served from `public/video/`. Its working files (images, original audio) live in `video/`, which is not committed.
 
 ## Design
 

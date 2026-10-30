@@ -148,6 +148,7 @@ export const footer = {
 
 export const comparison = {
   title: 'Comparing technologies: Frontend vs Backend',
-  // Path of the video inside public/ — empty until the video is recorded
-  videoSrc: '',
+  // Paths inside public/. The poster is the image shown before pressing play.
+  videoSrc: '/video/frontend-vs-backend.mp4',
+  posterSrc: '/video/poster.webp',
 }
